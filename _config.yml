@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Yurimyy의 CS Scribble"
+title                    : "Yurimyy의 CS Scribble"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "박유림(Yuim Park)"
@@ -106,10 +106,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yurim Park"
+  name             : "Yurim Park(박유림)"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "CS 지식 Scribble"
-  location         : "Seoul"
+  bio              : "CS 지식 Scribbling"
+  location         : "서울"
   email            :
   links:
     - label: "Email"
@@ -118,9 +118,18 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://yurimy.tistory.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lina1919"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
