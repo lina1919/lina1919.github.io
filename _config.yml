@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Yurimyy의 CS Sribble"
+title                    : "Yurimyy의 CS"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "박유림(Yuim Park)"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Yurim Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "CS 지식 Scribbling"
+  bio              : "CS 지식"
   location         : "Seoul"
   email            :
   links:
