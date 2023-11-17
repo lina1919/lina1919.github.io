@@ -7,7 +7,7 @@ comments: true
 share: true
 related: true
 categories:
-- 알고리즘
+- Algorithm
 toc: true
 toc_sticky: true
 toc_label: 목차
