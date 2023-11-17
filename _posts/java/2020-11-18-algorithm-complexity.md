@@ -1,5 +1,5 @@
 ---
-title: 정렬 알고리즘 시간복잡도
+title: 정렬 알고리즘
 layout: single
 author_profile: true
 read_time: true
@@ -7,7 +7,7 @@ comments: true
 share: true
 related: true
 categories:
-- Algorithm
+- Java
 toc: true
 toc_sticky: true
 toc_label: 목차
