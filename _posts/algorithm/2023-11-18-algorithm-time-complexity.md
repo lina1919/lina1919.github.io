@@ -16,5 +16,5 @@ description: algorithm 시간 복잡도
 last_modified_at: 2023-11-18T00:00:00+08:00
 ---
 
-### 항상 헷갈리는 정렬 알고리즘 시간복잡도
+### 항상 헷갈리는 정렬 알고리즘 시간복잡도 정리
 ![](https://i.imgur.com/X9bAiil.jpg)
