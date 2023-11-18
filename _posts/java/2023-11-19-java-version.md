@@ -1,0 +1,74 @@
+---
+title: Java 각 버전 별 차이
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+categories:
+- JAVA
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: Java 각 버전 별 차이를 기술합니다.
+meta_keywords: java
+last_modified_at: '2023-10-30 23:00:00 +0800'
+---
+### OpenJDK vs Oracle JDK
+#### Oracle JDK와 Open JDK의 차이점
+- Oracle JDK는 상용(유료)이지만, OpenJDK는 오픈소스기반(무료)
+- Oracle JDK의 라이선스는 Oracle BCL(Binary Code License) Agreement이지만, OpenJDK의 라이선스는 Oracle GPL v2
+- Oracle JDK는 LTS(장기 지원) 업데이트 지원을 받을 수 있지만, OpenJDK는 LTS 없이 6개월마다 새로운 버전이 배포된다.
+- Oracle JDK는 Oracle이 인수한 Sun Microsystems 플러그인을 제공하지만, OpenJDK는 제공하지 않는다.
+- Oracle JDK는 OpenJDK 보다 CPU 사용량과 메모리 사용량이 적고, 응답시간이 높다.
+
+> Java 8 이전 OpenJDK 빌드와 OracleJDK 빌드 사이에는 실제 소스 차이가 존재했는데, 최신의 두 버전은 본질적으로 동일하며 약간의 차이만 존재한다.
+## Java8,11 에서 어떤 기능들이 추가되었는가?
+
+### Java 8
+> 대규모 릴리즈(2014)
+- 람다식 제공
+	- 함수형 프로그래밍이 가능해짐
+		- 함수형 프로그래밍의 장점은?
+			- 높은 수준의 추상화
+			- 함수 단위의 코드 재사용 수월
+			- 직관적
+- Stream API 제공
+	- Stream이란?
+	- 컬렉션, 배열 등의 저장 요소를 하나씩 참조하며 람다식을 적용하여 반복적으로 처리할 수 있도록 해주는 기능
+	- 장점 : 코드가 깔끔해지고 가독성이 높아진다.
+	- 단점 : 에러가 많아질 경우 에러 발생 지점을 찾기 어려움. 과도하게 사용하는 경우 가독성이 떨어지고 유지보수가 힘들어짐
+- Optional
+	- NPE 보완 기능
+- Interface 기능 향상
+    - 기존 : public abstract method 만 허용
+    - Java 8 : static, default method 사용 가능 (Default Method의 장점은 하위호환성과 유연성, static method의 장점은 직관성, 유틸메서드로 사용이 편리하다)
+- Method Reference
+    - 참조로 메소드를 넘길 수 있음
+    - **람다 표현식 직접 작성하는 대신해 기존의 메서드 정의를 이용하는 방법**
+- localDateTime
+	- 기존 date를 개선하여 만들어짐
+
+### java 11
+> 2018년 발표
+- var 키워드를 이용한 지역변수 타입 추론
+- 병렬 처리 가비지 컬렉션, 개별 쓰레드로 분리된 **Stop-The-World** 등이 추가  
+    - 기존에는 Stop-The-World가 발생하면 GC를 실행하면 쓰레드를 제외한 나머지 쓰레드는 모두 작업을 멈췄었다. GC작업을 완료한 이후에야 중단했던 작업을 시작했는데 이게 개별 쓰레드로 분리되어서 Stop-The-World 시간이 개선되었다.
+- strip(), stripLeading(), stripTrailing(), isBlank(), repeat(n) 과 같은 **String 클래스에 새로운 메서드 추가**
+- writeString, readString, isSameFile 과 같은 **File관련 새로운 메서드 추가**
+- **람다에서 로컬 변수 var이 사용 가능**
+- Oracle JDK가 구독형 유료 모델로 전환
+- 서드파티 JDK 로의 이전 필요
+- 새로운 HTTP Client 표준의 등장
+	- CompletableFuture을 통해 Non-Blocking request and response 지원
+	- 개발자는 어플리케이션의 많고 복잡한 요구사항들을 처리할 수 있게됨
+
+### 새로운 릴리즈 마다 학습?
+**NO**
+Python 2에서 3과 같이 릴리스 사이에 심각한 문제가 있는 것과 달리 자바는 `하위 호환성`이 매우 높기 때문
+- 즉, Java 5 또는 8 프로그램이 Java 8-17 가상 머신에서 실행되도록 보장된다.
+- 이걸 backward compatible (하위 호환성) 이라 한다.
+반대로 java 8 JVM에서는 사용할 수 없는 java 17 기능을 의존한다면 컴파일 되지 않는다.
+- 대부분 java.lang.UnsupportedClassVersionError 발생
+그러므로 오히려 Java 8의 내용들로 토대를 쌓고 Java 9-17에 추가된 기능에 대해 알아보고 언제든지 사용할 수 있다.
