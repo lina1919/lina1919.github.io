@@ -11,7 +11,7 @@ toc_sticky: true
 toc_label: 목차
 description: Link State vs Distance Vector
 meta_keywords: java
-last_modified_at: '2023-10-30 23:00:00 +0800'
+last_modified_at: '2023-11-19 23:00:00 +0800'
 ---
 ## Network Layer의 2가지 역할
 1. data plane
