@@ -1,5 +1,5 @@
 ---
-title: Java 각 버전 별 차이
+title: OSI 7 Layer
 layout: single
 author_profile: true
 read_time: true
@@ -8,10 +8,11 @@ share: true
 related: true
 categories:
 - JAVA
+- Network
 toc: true
 toc_sticky: true
 toc_label: 목차
-description: Java 각 버전 별 차이를 기술합니다.
+description: OSI 7 Layer 각각의 특징을 기술합니다.
 meta_keywords: java
 last_modified_at: '2023-10-30 23:00:00 +0800'
 ---
