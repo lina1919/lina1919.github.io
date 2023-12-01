@@ -8,7 +8,7 @@ share: true
 related: true
 popular: true
 categories:
-- Algorithm
+- Spring
 toc: true
 toc_sticky: true
 toc_label: 목차
