@@ -1,4 +1,3 @@
-
 ---
 title: Spring MVC패턴에 대해서 설명해주세요
 layout: single
@@ -9,12 +8,12 @@ share: true
 related: true
 popular: true
 categories:
-- Database
+- Spring
 toc: true
 toc_sticky: true
 toc_label: 목차
 description: Spring MVC
-last_modified_at: 2024-03-21T00:00:00+08:00
+last_modified_at: 2023-11-28T00:00:00+08:00
 ---
 
 ### MVC 패턴이란?
