@@ -1,5 +1,5 @@
 ---
-title: 싱글톤 패턴에 대해 설명해주세요
+title: 싱글톤패턴에 대해 설명해주세요
 layout: single
 author_profile: true
 read_time: true
@@ -13,9 +13,10 @@ categories:
 toc: true
 toc_sticky: true
 toc_label: 목차
-description: 싱글톤패턴
-last_modified_at: 2024-03-21T10:00:00+08:00
+description: 싱글톤패턴
+last_modified_at: 2024-03-21T00:00:00+08:00
 ---
+
 ## 싱글톤 패턴이란?
 - 싱글톤 패턴이란 인스턴스가 하나만 생성되는 것을 보장하는 디자인패턴
 - 가장 원초적인 방법은 클래스 내부에서 private static final 키워드로 객체를 만들면 외부에서는 해당 클래스의 객체를 새로 생성할 수 없으므로 싱글톤 패턴 조건을 만족하게 됩니다.
